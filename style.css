@@ -1,110 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    width: 1000;
-    height: 1000;
-    background-color: #202020;
-    text-align: center;
-    color: white;
+body {
+  width: 1000;
+  height: 1000;
+  background-color: #202020;
+  text-align: center;
+  color: white;
 }
 
-h1{
-    margin: 40px;
-    margin-bottom: 20px;
+h1 {
+  margin: 40px;
+  margin-bottom: 20px;
 }
 
-#input{
-    display: flex;
-    gap: 20px;
-    margin: 10px 40px;
-    padding: 20px;
-    padding-bottom: 0;
+#input {
+  display: flex;
+  gap: 20px;
+  margin: 10px 40px;
+  padding: 20px;
+  padding-bottom: 0;
 }
 
-#markdown-input{
-    width: 50%;
-    border: solid 2px white;
-    height: 400px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #0000002f;
-    color: #ffffff;
-    font-size: 13px;
-    
+#markdown-input {
+  width: 50%;
+  border: solid 2px white;
+  height: 400px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #0000002f;
+  color: #ffffff;
+  font-size: 13px;
 }
 
-#input .output{
-    background-color: #0000002f;
-    padding:0px;
-    width: 50%;
-    border: solid 2px white;
-    border-radius: 15px;    
-    color: #ffffff;
-    font-size: 13px;
-    text-align: left;
-    padding: 0 50px ;
-    font-family: 'Courier New', Courier, monospace;
+#input .output {
+  background-color: #0000002f;
+  padding: 0px;
+  width: 50%;
+  border: solid 2px white;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: left;
+  padding: 0 50px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 pre {
-    background-color: #1e1e1e; /* Dark background for code blocks */
-    color: #ffffff; /* White text for code */
-    padding: 10px; /* Add padding for better readability */
-    border-radius: 10px; /* Rounded corners */
-    overflow-x: auto; /* Allow horizontal scrolling for long code */
-    font-size: 14px; /* Adjust font size */
-    font-family: 'Courier New', Courier, monospace; /* Use a monospace font */
+  background-color: #1e1e1e; /* Dark background for code blocks */
+  color: #ffffff; /* White text for code */
+  padding: 10px; /* Add padding for better readability */
+  border-radius: 10px; /* Rounded corners */
+  overflow-x: auto; /* Allow horizontal scrolling for long code */
+  font-size: 14px; /* Adjust font size */
+  font-family: "Courier New", Courier, monospace; /* Use a monospace font */
 }
 
 code {
-    background-color: #1e1e1e; /* Match the background of <pre> */
-    color: #dcdcaa; /* Slightly different color for inline code */
-    padding: 2px 4px; /* Add padding for inline code */
-    border-radius: 4px; /* Rounded corners for inline code */
-    font-family: 'Courier New', Courier, monospace; /* Use a monospace font */
+  background-color: #1e1e1e; /* Match the background of <pre> */
+  color: #dcdcaa; /* Slightly different color for inline code */
+  padding: 2px 4px; /* Add padding for inline code */
+  border-radius: 4px; /* Rounded corners for inline code */
+  font-family: "Courier New", Courier, monospace; /* Use a monospace font */
 }
 
-#reset{
-    padding: 15px;
-    border-radius: 15px;
-    color: white;
-    background-color: #50505065;
-    font-size: large;
-    margin: 20px;
-    width: 220px;
-    border: 2px solid #cbcbcb;
+#reset {
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  background-color: #50505065;
+  font-size: large;
+  margin: 20px;
+  width: 220px;
+  border: 2px solid #cbcbcb;
 }
 
-.c{
-    background-color: #323232;
-    border-radius: 20px;
-    padding: 30px 10px;
-    margin: 10px 50px;
+.c {
+  background-color: #323232;
+  border-radius: 20px;
+  padding: 30px 10px;
+  margin: 10px 50px;
 }
 
-h2{
-    padding-bottom: 20px;
+h2 {
+  padding-bottom: 20px;
 }
 
-.suggestions{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    row-gap: 10px;
-    justify-content: center;
-    padding: 10px 20px;
+.suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 10px;
+  justify-content: center;
+  padding: 10px 20px;
 }
 
-.suggestions button{
-    padding: 10px;
-    width: 400px;
-    background-color: #0000002f;
-    color: #ffffff;
-    border-radius: 10px;
-    border: none;
-    font-size: medium;
+.suggestions button {
+  padding: 10px;
+  width: 400px;
+  background-color: #0000002f;
+  color: #ffffff;
+  border-radius: 10px;
+  border: none;
+  font-size: medium;
 }
-

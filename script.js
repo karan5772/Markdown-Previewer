@@ -1,10 +1,9 @@
-
 marked.setOptions({
-    breaks: true,
-    gfm: true,
-  });
+  breaks: true,
+  gfm: true,
+});
 
-  const defaultMarkdown = `# Welcome to Markdown Previewer
+const defaultMarkdown = `# Welcome to Markdown Previewer
   ___
 
 ## Type your markdown here
@@ -25,22 +24,22 @@ function hello() {
 \`\`\`
 `;
 
-
 const input = document.getElementById("markdown-input");
 const preview = document.getElementById("preview");
 const resetButton = document.getElementById("reset");
 
-const savedMarkdown = localStorage.getItem("markdownContent") || defaultMarkdown;
-input.value = savedMarkdown
+const savedMarkdown =
+  localStorage.getItem("markdownContent") || defaultMarkdown;
+input.value = savedMarkdown;
 preview.innerHTML = marked.parse(input.value);
 
 input.addEventListener("input", () => {
-    localStorage.setItem("markdownContent", input.value);
-    preview.innerHTML = marked.parse(input.value);
+  localStorage.setItem("markdownContent", input.value);
+  preview.innerHTML = marked.parse(input.value);
 });
 
-resetButton.addEventListener('click', () => {
-    input.value = defaultMarkdown;
-    preview.innerHTML = marked.parse(input.value);
-    localStorage.removeItem("markdownContent");
+resetButton.addEventListener("click", () => {
+  input.value = defaultMarkdown;
+  preview.innerHTML = marked.parse(input.value);
+  localStorage.removeItem("markdownContent");
 });
