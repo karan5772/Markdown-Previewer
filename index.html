@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <h1>MARKDOWN PREVIEWER</h1>
+    <div id="input">
+        <textarea id="markdown-input" placeholder="Enter Markdown here..."></textarea>
+        <div class ="output" id="preview"></div>
+    </div>
+    <button type="reset" id="reset">Reset Button</button>
+    <div class="c">
+      <h2>BASIC MARKDOWN INSTRUCTIONS</h2>
+      <div class="suggestions">
+        <button># Header: # Header 1</button>
+        <button>**Bold**: **bold text**</button>
+        <button>*Italic*: *italic text*</button>
+        <button>[Link](url): [Google](https://www.google.com)</button>
+        <button>Line Divider : ___</button>
+        <button>- List: - List item</button>
+      </div>
+    </div>
+</body>
+<script src="script.js" type="module"></script>
+</html>
